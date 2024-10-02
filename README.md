@@ -1,9 +1,11 @@
-![032fef67686420e2d71c827d7414b80](https://github.com/user-attachments/assets/6be1c2e6-32ec-4271-a744-4dd26f62adfa)## 1.项目简介
+## 1.项目简介
+![032fef67686420e2d71c827d7414b80](https://github.com/user-attachments/assets/6be1c2e6-32ec-4271-a744-4dd26f62adfa)
 ![cfdbba722570b7ac2b8c84e090e2afb](https://github.com/user-attachments/assets/c8d7c181-58ab-422f-8afb-54f6349f7c5d)
 ![ea9961cf2e681cd2c2b93807caf69cb](https://github.com/user-attachments/assets/0d27415d-c994-40e8-aa76-19ed5eb2cbd1)
 ### <div align="center"> 江苏省小麦估产样点空间分布 <br><br>
   
-## 2.使用说明:<br><br>
+## 2.代码说明:<br><br>
+
 
 ## 3.结果展示(部分):
 ![fc5604bb394def82e75d52e69741c1e](https://github.com/user-attachments/assets/671e42f6-e7b8-4918-91fd-9e7acfff8d1e)
