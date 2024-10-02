@@ -4,9 +4,11 @@
 ![ea9961cf2e681cd2c2b93807caf69cb](https://github.com/user-attachments/assets/0d27415d-c994-40e8-aa76-19ed5eb2cbd1)
 ### <div align="center"> 江苏省小麦估产样点空间分布 <br><br>
   
-## 2.代码说明:<br><br>
-
-
+## 2.代码说明(模型基于2023年EVI制作,仅作示例):<br><br>
+### *在GoogleEarthEngine中导入采样点和研究区shp,使用 modisEVI(GEE).txt 下载预处理后对应年份的时间序列EVI影像(日期设置为第一年播种到第二年播种)
+### *根据不同的EVI和产量实测数据挖掘回归关系,构建三个地区的估产模型,并通过精度指标反复校正确定最佳系数
+### *使用 cal_Yield_JS.py 来计算产量和拼接图像
+### *使用ArcGIS等软件用小麦产区作底图对小麦产量进行掩膜并出图
 ## 3.结果展示(部分):
 ![fc5604bb394def82e75d52e69741c1e](https://github.com/user-attachments/assets/671e42f6-e7b8-4918-91fd-9e7acfff8d1e)
 ### <div align="center"> 江苏省小麦单产空间分布
