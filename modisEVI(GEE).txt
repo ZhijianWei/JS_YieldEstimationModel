@@ -1,0 +1,35 @@
+var geometry = ee.FeatureCollection('users/519838216/513JS_bei');
+Map.centerObject(geometry,6);
+//选取影像集以及波段 EVI
+var evi = ee.ImageCollection("MODIS/006/MYD13Q1").filterDate('2023-03-15', '2023-04-30').select("EVI");
+//换算单位
+var multiply = function(image){ 
+ var img = image.multiply(0.0001);  
+ return img.set('system:time_start',image.get('system:time_start'));
+};
+evi = evi.map(multiply);
+//设置调色板并展示影像
+var colorizedVis = {min: 0.0,  max: 1.0,  palette: ['FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901', '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',  '012E01', '011D01', '011301']};
+print(evi);
+function exportImageCollection(imgCol) {
+  var indexList = imgCol.reduceColumns(ee.Reducer.toList(), ["system:index"]).get("list");
+  indexList.evaluate(function(indexs) {
+    for (var i=0; i<indexs.length; i++) {
+      var image = imgCol.filter(ee.Filter.eq("system:index", indexs[i])).first();
+      image = image.clip(geometry);
+      Map.addLayer(image, colorizedVis, indexs[i]);//查看具体的遥感影像
+      //tif数据下载
+      Export.image.toDrive({
+ image: image,
+        description: 'modis_evi_'+indexs[i],
+        fileNamePrefix: 'modis_evi_'+indexs[i],
+        folder: 'Modis',
+        region: geometry,
+        scale: 250,
+        crs: "EPSG:4326",
+        maxPixels: 1e13
+      });
+    }
+  });
+}
+exportImageCollection(evi);
