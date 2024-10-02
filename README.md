@@ -12,7 +12,7 @@
   
 ## ⚡代码说明(模型基于2023年EVI制作,仅作示例):<br><br>
 ### 1.在GoogleEarthEngine中导入采样点和研究区shp,使用 modisEVI(GEE).txt 下载预处理后对应年份的时间序列EVI影像(日期设置为第一年播种到第二年播种)
-### 2.根据不同的EVI和产量实测数据挖掘回归关系,构建三个地区的估产模型,并通过精度指标反复校正确定最佳系数
+### 2.根据不同的EVI和产量实测数据( JSyield_summary(averaged).csv )挖掘回归关系,构建三个地区的估产模型,并通过精度指标反复校正确定最佳系数
 <br><br>
 ![e58591163576d21b00caf83157783e2](https://github.com/user-attachments/assets/1c2d3344-c684-4bec-a0da-2b98857007d8)
 ![137da06c0bf570b41a8cfc72528f85c](https://github.com/user-attachments/assets/1c18d9da-0b79-4980-b2d7-74bb1d67a1b5)
