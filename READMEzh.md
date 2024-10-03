@@ -32,6 +32,6 @@
 ### <div align="center"> 连云港市小麦单产空间分布<br><br>
 
 ## 🤗特别感谢
-@[YueyueZang]("https://github.com/YueyueZang")对回归关系的挖掘和估产模型的校正
+[@YueyueZang](https://github.com/YueyueZang)对回归关系的挖掘和估产模型的校正
 
 
