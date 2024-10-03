@@ -1,5 +1,5 @@
 # <div align="center">江苏省小麦产量遥感估算
-## <div align="center"><b><a href="[README.md](README.md)">English</a> | <a href=[READMEzh.md](READMEzh.md)>简体中文</a></b></div>
+## <div align="center"><b><a href="https://github.com/ZhijianWei/RS-YieldEstimationModel-for-JS/blob/main/README.md">English</a> | <a href="https://github.com/ZhijianWei/RS-YieldEstimationModel-for-JS/blob/main/READMEzh.md">简体中文</a></b></div>
 
 #### 作者：魏智健 (南京农业大学) ，如果有任何问题，请随时联系我``18151936092@163.com``📧
 **如果这套算法对你有帮助，可以给本项目一个 Star ⭐ ，或者推荐给你的朋友们，谢谢！😊**
@@ -12,6 +12,7 @@
   
 ## ⚡代码说明(模型基于2023年EVI制作,仅作示例):<br><br>
 ### 1.在GoogleEarthEngine中导入采样点和研究区shp,使用 modisEVI(GEE).txt 下载预处理后对应年份的时间序列EVI影像(日期设置为第一年播种到第二年播种)
+![image](https://github.com/ZhijianWei/RS-YieldEstimationModel-for-JS/blob/main/output_map/EVI_down.png)
 ### 2.根据不同的EVI和产量实测数据( JSyield_summary(averaged).csv )挖掘回归关系,构建三个地区的估产模型,并通过精度指标反复校正确定最佳系数
 <br><br>
 ![e58591163576d21b00caf83157783e2](https://github.com/user-attachments/assets/1c2d3344-c684-4bec-a0da-2b98857007d8)
