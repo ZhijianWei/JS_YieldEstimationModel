@@ -29,6 +29,9 @@
 ![f95ef93afb92bd49328566ec9ee7b50](https://github.com/user-attachments/assets/a9f13372-4889-4f83-af5b-73f2e42edbd9)
 ### <div align="center"> 徐州市小麦单产空间分布
 ![a8aa9f6d0b4ca3528a9879b7932eed0](https://github.com/user-attachments/assets/5d8ca818-d2f4-4fd0-9911-6417e6fd806a)
-### <div align="center"> 连云港市小麦单产空间分布
+### <div align="center"> 连云港市小麦单产空间分布<br><br>
+
+## 🤗特别感谢
+@[YueyueZang]("https://github.com/YueyueZang")对回归关系的挖掘和估产模型的校正
 
 
