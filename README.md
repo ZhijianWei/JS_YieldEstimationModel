@@ -29,5 +29,5 @@
 ### <div align="center"> Spatial Distribution of Wheat Yield in Xuzhou City
 ![image](https://github.com/ZhijianWei/RS-YieldEstimationModel-for-JS/blob/main/output_map/Lianyungang_output.png)
 ### <div align="center"> Spatial Distribution of Wheat Yield in Lianyungang City<br><br><br><br>
-🤗Special Thanks
+## 🤗Special Thanks
 Mining of regression relationships and calibration of estimation models by [@YueyueZang](https://github.com/YueyueZang)
